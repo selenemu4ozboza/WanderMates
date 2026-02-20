@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WonderMates - Viaja con gente real</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <a class="marca" href="index.html">
+                <img src="imagenes/logo.png" alt="WonderMates Logo" class="logo-img">
+                <span>WanderMates</span>
+            </a>
+
+            <nav class="menu" aria-label="Navegación principal">
+                <a href="feed.html">Explorar</a>
+                <a href="mapa.html">Mapa</a>
+                <a href="planes.html">Planes</a>
+                <a href="perfil.html">Perfil</a>
+            </nav>
+            
+            <div class="sesion">
+                <a class ="boton iniciar-sesion" href="iniciar.html">Iniciar Sesión</a>
+                <a class="boton registrarse" href="registro.html">Registrarse</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="registro">
+        <div class="contenedor8">
+            <section class="caja-registro">
+                <h1>Registrarse</h1>
+
+                <form class="form_registro" action="perfil.html" method="get">
+                    <fieldset class="datos-basicos2">
+                        <legend>Datos básicos</legend>
+
+                        <div class="formulario">
+                            <div>
+                                <label for="usuario">Nombre de usuario</label>
+                                <input id="usuario" name="usuario" type="text" placeholder="@tuUsuario" required>
+                            </div>
+                            <div>
+                                <label for="email">Email</label>
+                                <input id="email2" name="email" type="text" placeholder="ejemplo1234@gmail.com" required>
+                            </div>
+                            <div>
+                                <label for="contraseña">Contraseña</label>
+                                <input id="contraseña2" name="contraseña" type="password" placeholder="mínimo 6" minlength="6" required>
+                            </div>
+                            
+
+                            <div>
+                                <label for="contraseña">Repetir contraseña</label>
+                                <input id="contraseña2" name="contraseña" type="password" placeholder="mínimo 6" minlength="6" required>
+                            </div>
+                        
+                            <div>
+                                <label for="fecha_nac">Fecha de nacimiento</label>
+                                <input id="fecha_nac" name="fecha_nac" type="date" required>
+                            </div>
+                        </div>
+
+                        <div class="formulario">
+                            <div>
+                                <label for="pais">País de residencia</label>
+                                <input id="pais" name="pais" type="text" list="paises" placeholder="España" required>
+                                <datalist id="paises">
+                                    <option value="España"></option>
+                                    <option value="Francia"></option>
+                                    <option value="Italia"></option>
+                                    <option value="Portugal"></option>
+                                    <option value="Japón"></option>
+                                </datalist>
+                            </div>
+                            <div>
+                                <label for="ciudad">Ciudad</label>
+                                <input id="ciudad" name="ciudad" type="text" placeholder="Barcelona" required>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <hr class="hr-registro">
+
+                    <fieldset class="viajes2">
+                        <legend>Viajes e interes</legend>
+
+                        <label for="destino"> Destino soñado</label>
+                        <select id="destino" name="destino">
+                            <option value="roma">Roma</option>
+                            <option value="paris">París</option>
+                            <option value="lisboa">Lisboa</option>
+                            <option value="tokio">Tokio</option>
+                        </select>
+                        <br>
+                        <label>¿Qué buscas?</label>
+                        <div class="formulario1">
+                            <div>
+                                <input id="amigos" name="busca" type="radio" value="amigos" checked>
+                                <label for="amigos" style="color: #8B5CF6;">Conocer gente</label>
+                            </div>
+
+                            <div>
+                                <input id="acompañante" name="busca" type="radio" value="acompañantes">
+                                <label for="acompañante" style="color: #8B5CF6;">Acompañantes de viaje</label>
+                            </div>
+
+                            <div>
+                                <input id="local" name="busca" type="radio" value="local">
+                                <label for="local" style="color: #8B5CF6;">Quedar con locales</label>
+                            </div>
+                        </div>
+                        <br>
+                        
+                        <label>Intereses</label>
+                        <div class="formulario1">
+                            <div><input id="i1" type="checkbox" name="interes" value="playa"><label for="i1" style="color: #8B5CF6;">Playa</label></div>
+                            <div><input id="i2" type="checkbox" name="interes" value="museos"><label for="i2" style="color: #8B5CF6;">Museos</label></div>
+                            <div><input id="i3" type="checkbox" name="interes" value="comida"><label for="i3" style="color: #8B5CF6;">Comida</label></div>
+                        </div>
+                            
+                        <br>
+                        
+                    </fieldset>
+
+                    <button class="boton guardar3" type="submit"> <b>Guardar y continuar</b></button>
+                </form>
+            </section>
+        </div>
+    </main>
+</body>
+</html>

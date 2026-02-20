@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feed - WanderMates</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="logo">
+        <a class="marca" href="index.html">
+            <img src="imagenes/logo.png" alt="WonderMates Logo" class="logo-img">
+            <span>WanderMates</span>
+        </a>
+
+        <nav class="menu" aria-label="Navegación principal">
+            <a href="feed.html">Explorar</a>
+            <a href="mapa.html">Mapa</a>
+            <a href="planes.html">Planes</a>
+            <a href="perfil.html">Perfil</a>
+        </nav>
+        
+        <div class="sesion">
+            <a class ="boton iniciar-sesion" href="iniciar.html">Iniciar Sesión</a>
+            <a class="boton registrarse" href="registro.html">Registrarse</a>
+        </div>
+    </div>
+</header>
+    
+<main class="feed">
+    <div class="contenedor publis_grid">
+
+        <section class="publicacion p-principal">
+            <article class="post">
+                <img class="post-img" src="imagenes/barcelona.jpg"></img>
+                <div class="post-body">
+                    <div class="post-top">
+                        <div>
+                            <strong> @lucia.trips <span class="boton">Cerca</span></strong>
+                            <div class="desc-publi"> 📍 Barcelona · “Atardecer + tapas” </div>
+                            
+                        </div> 
+                    </div>
+                    <p> Me voy a Lisboa en 2 semanas. ¿Alguien se apunta?</p>
+                    <p> <em>#atardecer</em> <b>#food</b> </p>
+                    <div class="botones-post">
+                        <a class="boton ver-perfil" href="perfil.html">Ver perfil</a>
+                        <a class="boton ver-planes" href="planes.html">Ver planes</a>
+                    </div>
+
+                    <br>
+                    <br>
+
+                    <p> Reel del día </p>
+
+                    <video width="100%" controls>
+                        <source src="barcelona.mp4" type="video/mp4">
+                    </video>
+                    <br>
+                    <br>
+                    <p> Canción de viaje </p>
+                    <audio controls>
+                        <source src="Estopa.mp3" type="audio/mpeg">
+                    </audio>
+
+                    <div class="botones-post">
+                        <a class="boton subir-publi" href="subir.html">Subir algo tú</a>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <section class="publicacion p-secundaria">
+            <article class="post">
+                <img class="post-img" src="imagenes/louvre.jpg"></img>
+                <div class="post-body">
+                    <div class="post-top">
+                        <div>
+                            <strong> @dan.cool <span class="boton live">●Live</span> </strong>
+                            <div class="desc-publi"> 📍 Louvre · “Museo de arte” </div>
+                            
+                        </div> 
+                    </div>
+                    <p> Acabo de llegar a París, ¿alguien quiere quedar para tomar algo?</p>
+                    <p class="hashtags"> <em>#museos</em><b>#louvre</b> </p>
+                    <div class="botones-post">
+                        <a class="boton ver-perfil" href="perfil.html">Ver perfil</a>
+                        <a class="boton ver-planes" href="planes.html">Ver planes</a>
+                    </div>
+
+                    <br>
+                    <br>
+
+                    <p> Reel del día </p>
+
+                    <video width="100%" controls>
+                        <source src="video_louvre.mp4" type="video/mp4">
+                    </video>
+                    <br>
+                    <br>
+                    <p> Canción de viaje </p>
+                    <audio controls>
+                        <source src="Stromae.mp3" type="audio/mpeg">
+                    </audio>
+
+                    <div class="botones-post">
+                        <a class="boton subir-publi" href="subir.html">Subir algo tú</a>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </div>
+
+        
+</main>
+</body>
+</html>

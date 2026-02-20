@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subir contenido - WanderMates</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+    <title>Subir - WanderMates</title>
+</head>
+<body>
+
+<header class="header">
+    <div class="logo">
+        <a class="marca" href="index.html">
+            <img src="imagenes/logo.png" alt="WonderMates Logo" class="logo-img">
+            <span>WanderMates</span>
+        </a>
+
+        <nav class="menu" aria-label="Navegación principal">
+            <a href="feed.html">Explorar</a>
+            <a href="mapa.html">Mapa</a>
+            <a href="planes.html">Planes</a>
+            <a href="perfil.html">Perfil</a>
+        </nav>
+        
+        <div class="sesion">
+           <a class="boton" style="margin-right: 100px;" href="feed.html">Volver</a>
+        </div>
+    </div>
+</header>
+
+<main class="subir">
+    <div class="contenedor7">
+        <section class="caja-subir">
+            <h1>Subir contenido</h1>
+            <form action="confirmar.html" method="get">
+                <label for="type">Tipo</label>
+                <select id="type" name="type">
+                    <option value="foto">Foto</option>
+                    <option value="video">Video</option>
+                    <option value="historia">Historia</option>
+                </select>
+                <br>
+
+                <label for="titulo">Título</label>
+                <input id="titulo" name="titulo" type="text" placeholder="Ej: Atardecer en Roma" required>
+                <br>
+                <label for="desc">Descripción</label>
+                <textarea id="desc" name="desc" placeholder="Cuenta tu experiencia..."></textarea>
+
+                <div class="formulario">
+                    <div>
+                        <label for="ubicacion">Ubicación</label>
+                        <input id="ubicacion" name="ubicacion" type="text" placeholder="Roma, Italia" required>
+                    </div>
+
+                    <div>
+                        <label for="fecha_viaje">Fecha del viaje</label>
+                        <input id="fecha_viaje" name="fecha_viaje" type="date">
+                    </div>
+                </div>
+
+                <label for="privacidad">Privacidad</label>
+                <select id="privacidad" name="privacidad">
+                    <option value="publico">Público</option>
+                    <option value="yo">Solo yo</option>
+                </select>
+                <br>
+                <button class="boton publicar" typt="submit" href="confirmar.html"><b>Publicar</b></button>
+                <a class="boton" href="feed.html">Cancelar</a>
+            </form>
+        </section>
+    </div>
+</main>
+    
+</body>
+</html>

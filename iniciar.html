@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar sesión - WanderMates</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <a class="marca" href="index.html">
+                <img src="imagenes/logo.png" alt="WonderMates Logo" class="logo-img">
+                <span>WanderMates</span>
+            </a>
+
+            <nav class="menu" aria-label="Navegación principal">
+                <a href="feed.html">Explorar</a>
+                <a href="mapa.html">Mapa</a>
+                <a href="planes.html">Planes</a>
+                <a href="perfil.html">Perfil</a>
+            </nav>
+            
+            <div class="sesion">
+                <a class ="boton iniciar-sesion" href="iniciar.html">Iniciar Sesión</a>
+                <a class="boton registrarse" href="registro.html">Registrarse</a>
+            </div>
+        </div>
+    </header>
+    <main class="iniciar">
+        <div class="contenedor6">
+            <h1>Iniciar sesión</h1>
+            <form>
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" placeholder="ej: lucia@gmail.com" required>
+
+                <label for="contraseña">Contraseña</label>
+                <input id="contraseña" name="contraseña" type="password" placeholder="mínimo 6" minlength="6" required>
+
+                <div>
+                    <div class="iniciar-sesion">
+                        <label for="recordar">Recordarme</label>
+                        <select id="recordar" name="recordar">
+                            <option value="si">Sí</option>
+                            <option value="no" selected>No</option>
+                        </select>
+                    </div>
+                    <div class="iniciar-sesion">
+                        <label for="role">Tipo de usuario</label>
+                        <select id="role" name="role">
+                            <option value="viajero">Viajero</option>
+                            <option value="explorador">Explorador</option>
+                            <option value="local">Local</option>
+                        </select>
+                    </div>
+                </div>
+                <a class="boton entrar" type="submit" href="feed.html">Entrar</a>
+                <a class="boton" href="index.html">Cancelar</a>
+            </form>
+            <hr/>
+            <p class="descripcion2">
+                Consejo: usa <b>lugares públicos</b> si quedas con alguien por primera vez.
+            </p>
+        </div>
+    </main>
+</body>
+</html>

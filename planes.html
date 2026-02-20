@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planes - WanderMates</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    
+    <header class="header">
+        <div class="logo">
+            <a class="marca" href="index.html">
+                <img src="imagenes/logo.png" alt="WonderMates Logo" class="logo-img">
+                <span>WanderMates</span>
+            </a>
+
+            <nav class="menu" aria-label="Navegación principal">
+                <a href="feed.html">Explorar</a>
+                <a href="mapa.html">Mapa</a>
+                <a href="planes.html">Planes</a>
+                <a href="perfil.html">Perfil</a>
+            </nav>
+            
+            <div class="sesion">
+                <a class ="boton iniciar-sesion" href="iniciar.html">Iniciar Sesión</a>
+                <a class="boton registrarse" href="registro.html">Registrarse</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="planes">
+        <div class="contenedor3">
+            <h1>Planes de Viaje</h1>
+            
+            <section class="caja-planes">
+                <h2 class="activos">Planes Activos</h2>
+                <div class="contenedor-planes">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Usuario</th>
+                                <th>Destino</th>
+                                <th>Fechas</th>
+                                <th>Tipo</th>
+                                <th>Personas</th>
+                                <th>Acción</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>@lucia.trips</td>
+                                <td>Lisboa</td>
+                                <td>10-20 Sep</td>
+                                <td>Ocio</td>
+                                <td>3</td>
+                                <td><a class="boton unirse" href="#">Unirse</a></td>
+                            </tr>
+
+                            <tr>
+                                <td>@dan.cool</td>
+                                <td>París</td>
+                                <td>5-15 Oct</td>
+                                <td>Cultural</td>
+                                <td>2</td>
+                                <td><a class="boton unirse" href="#">Unirse</a></td>
+                            </tr>
+
+                            <tr>
+                                <td>@maria.adventures</td>
+                                <td>Roma</td>
+                                <td>1-10 Nov</td>
+                                <td>Aventura</td>
+                                <td>4</td>
+                                <td><a class="boton unirse" href="#">Unirse</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+                <div class="crear">
+                    <h3 class="crear_nuevo">Crear Nuevo Plan</h3>
+                    <form action="planes.html" method="post">
+                        <div class="formulario">
+                            <div>
+                                <label for="destino">Destino:</label>
+                                <input type="text" id="destino" name="destino" placeholder="Roma" required>
+                            </div>
+
+                            <div>
+                                <label for="fechas">Fechas:</label>
+                                <input type="date" id="fechas" name="fechas"  required>
+                            </div>
+                            
+                        </div>
+                        <div class="detalles">
+                            <label for="detalles">Detalles:</label>
+                            <textarea type="text" id="detalles" name="detalles" placeholder="Qué quieres hacer..." required></textarea>
+                        </div>
+                        
+                        <button class="boton guardar" type="submit">Guardar Plan</button>
+                        
+                    </form>
+                </div>
+            </section>
+        </div>
+    </main>
+
+</body>
+</html>
