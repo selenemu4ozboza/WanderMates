@@ -70,7 +70,7 @@ header {
 .sesion{
     display: flex;
     gap: 20px;
-    margin-right: 100px;
+    margin-right: 30px;
 }
 .boton {
     display: inline-block;
@@ -109,6 +109,7 @@ a{
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
+    margin-left: 70px;
 }
 .cajas{
     margin-top: 40px;
@@ -463,6 +464,11 @@ strong{
     position:relative;
 }
 
+.unirse , .guardar {
+    background: linear-gradient(135deg, #BFD9FF 0%, #E6C9FF 45%, #FFD6A5 100%);
+    border: none;
+}
+
 th, td {
     padding: 10px;
     border-bottom: 1px solid rgba(16,24,40,.12);
@@ -701,6 +707,7 @@ button{
 .guardar2{
     background: linear-gradient(135deg, #BFD9FF 0%, #E6C9FF 45%, #FFD6A5 100%);
     width: 200px;
+    border: none;
 }
 .formulario1{
     display: flex;
@@ -718,6 +725,10 @@ input{
     outline: none;
     margin: 6px 0 12px;
     
+}
+
+#bio {
+    margin-top: 20px;
 }
 legend{
     padding: 0 8px; 
@@ -738,6 +749,7 @@ legend{
     margin: 0 auto;
     background-color: rgba(255,255,255,0.8);
     padding: 34px;
+    border-radius: 16px;
     
     
 }
@@ -763,6 +775,10 @@ legend{
     color: #667085;
     margin-right: 30px;
 }
+.botones-iniciar{
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
 
 
 /*SUBIR*/
@@ -786,6 +802,19 @@ legend{
     width: 100px;
     
 }
+.ubi-fecha{
+    justify-content: center;
+}
+#titulo{
+    width: 200px;
+}
+#type{
+    width: 200px;
+}
+#desc{
+    width: 1200px;
+    margin-top: 10px;
+}
 
 
 
@@ -797,9 +826,23 @@ legend{
     text-align: center;
 }
 .botones{
-    margin-left: 600px;
+    margin-left: 570px;
+    display:flex; 
+    gap:10px;
+    flex-wrap:wrap;
+    margin-top:25px;
 }
-
+.caja-confirmar{
+    margin-top: 120px;
+    margin-right: 120px;
+}
+.confirmar2{
+    margin-right: 500px;
+}
+.volver-feed{
+    background: linear-gradient(135deg, #BFD9FF 0%, #E6C9FF 45%, #FFD6A5 100%);
+    border: none;
+}
 
 
 .contenedor7 {
