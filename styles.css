@@ -888,7 +888,7 @@ legend{
 /*MEDIA QUERY*/
 @media (max-width: 576px) {
 
-    /* --- HEADER / NAV --- */
+    /* ---HEADER / NAV*--- */
     .logo {
         flex-wrap: wrap;
         padding: 10px 16px;
