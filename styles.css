@@ -906,7 +906,6 @@ legend{
         gap: 10px;
         font-size: 14px;
         flex-wrap: wrap;
-        justify-content: center;
         width: 100%;
         order: 3;
     }
@@ -928,16 +927,19 @@ legend{
     }
 
     /* --- INDEX --- */
-    .cajas {
-        margin: 16px 0 0 0;
+    .index{
+        margin-left: -130px;
     }
 
     .cajas_grid {
         grid-template-columns: 1fr;
-        grid-template-rows: auto;
+        grid-template-rows: 1fr;
         margin-right: 0;
         gap: 14px;
         padding: 0 16px;
+    }
+    .collage-img{
+        width: 300px;
     }
 
     .botones_acciones {
@@ -971,13 +973,13 @@ legend{
 
     /* --- FEED --- */
     .feed {
-        margin-left: 0;
+        margin-left: -100px;
         margin-top: 16px;
         padding: 0 16px;
     }
 
     .publis_grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: 357px;
         grid-template-rows: auto;
         margin-right: 0;
     }
@@ -1062,6 +1064,9 @@ legend{
     .perfilLucia-user {
         margin-top: 10px;
         font-size: 24px;
+    }
+    .perfilLucia-volver{
+        margin-top: -260px;
     }
 
     .perfilLucia-estado {
